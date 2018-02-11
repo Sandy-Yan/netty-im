@@ -21,7 +21,6 @@ import java.util.List;
 import com.corundumstudio.socketio.AckRequest;
 import com.corundumstudio.socketio.Transport;
 import com.corundumstudio.socketio.ack.AckManager;
-import com.corundumstudio.socketio.command.constant.EventConstants;
 import com.corundumstudio.socketio.namespace.Namespace;
 import com.corundumstudio.socketio.namespace.NamespacesHub;
 import com.corundumstudio.socketio.protocol.Packet;
@@ -30,7 +29,6 @@ import com.corundumstudio.socketio.scheduler.CancelableScheduler;
 import com.corundumstudio.socketio.scheduler.SchedulerKey;
 import com.corundumstudio.socketio.transport.NamespaceClient;
 import com.corundumstudio.socketio.transport.PollingTransport;
-import io.netty.util.CharsetUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

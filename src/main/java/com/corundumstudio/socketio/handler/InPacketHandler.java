@@ -16,7 +16,7 @@
 package com.corundumstudio.socketio.handler;
 
 import com.corundumstudio.socketio.Transport;
-import com.corundumstudio.socketio.command.constant.EventConstants;
+import com.github.andy.im.command.constant.EventConstants;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler.Sharable;
 import io.netty.channel.ChannelHandlerContext;

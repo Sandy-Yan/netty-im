@@ -2,16 +2,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.corundumstudio.socketio</groupId>
+    <groupId>com.github.andy</groupId>
     <artifactId>netty-im</artifactId>
-    <version>1.7.12-SNAPSHOT</version>
-    <packaging>bundle</packaging>
-    <name>Netty-IM</name>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>netty-im</name>
     <description>Netty-IM server implemented on Java</description>
 
     <developers>
     </developers>
-
 
     <properties>
         <skipTests>true</skipTests>
@@ -208,11 +207,11 @@
         </dependency>
         <!--spring end-->
 
-        <!--common-base-->
+        <!--jodd-->
         <dependency>
-            <groupId>com.github.andy</groupId>
-            <artifactId>common-base</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <groupId>org.jodd</groupId>
+            <artifactId>jodd-core</artifactId>
+            <version>3.8.1</version>
         </dependency>
 
         <dependency>
@@ -237,7 +236,6 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-eclipse-plugin</artifactId>
@@ -247,7 +245,6 @@
                     <forceRecheck>true</forceRecheck>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>

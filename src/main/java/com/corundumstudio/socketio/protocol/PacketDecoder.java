@@ -15,8 +15,8 @@
  */
 package com.corundumstudio.socketio.protocol;
 
-import com.corundumstudio.socketio.command.model.RawCommand;
-import com.corundumstudio.socketio.command.util.ObjectMapperUtils;
+import com.github.andy.im.command.model.RawCommand;
+import com.github.andy.im.command.util.ObjectMapperUtils;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufInputStream;
 import io.netty.buffer.Unpooled;

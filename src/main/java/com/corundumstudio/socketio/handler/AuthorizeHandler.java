@@ -170,7 +170,6 @@ public class AuthorizeHandler extends ChannelInboundHandlerAdapter implements Di
         List<String> transportValue = params.get("transport");
         if (transportValue == null) {
             log.error("## Got no transports for request {}", req.uri());
-
             HttpResponse res = new DefaultHttpResponse(HTTP_1_1, HttpResponseStatus.UNAUTHORIZED);
             channel.writeAndFlush(res).addListener(ChannelFutureListener.CLOSE);
             return false;

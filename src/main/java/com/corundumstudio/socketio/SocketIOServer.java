@@ -15,7 +15,6 @@
  */
 package com.corundumstudio.socketio;
 
-import com.corundumstudio.socketio.command.spring.CommandInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
@@ -42,8 +41,6 @@ import com.corundumstudio.socketio.listener.DisconnectListener;
 import com.corundumstudio.socketio.listener.MultiTypeEventListener;
 import com.corundumstudio.socketio.namespace.Namespace;
 import com.corundumstudio.socketio.namespace.NamespacesHub;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /**
  * Fully thread-safe.
@@ -130,6 +127,7 @@ public class SocketIOServer implements ClientListeners {
      */
     public Future<Void> startAsync() {
         log.info("## Session store / pubsub factory used: {}", configCopy.getStoreFactory());
+
         initGroups();
 
         pipelineFactory.start(configCopy, namespacesHub);

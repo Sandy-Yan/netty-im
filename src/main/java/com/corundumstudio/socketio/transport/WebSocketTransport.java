@@ -54,13 +54,16 @@ import io.netty.util.ReferenceCountUtil;
 @Sharable
 public class WebSocketTransport extends ChannelInboundHandlerAdapter {
 
-    public static final String NAME = "websocket";
-
     private static final Logger log = LoggerFactory.getLogger(WebSocketTransport.class);
 
+    public static final String NAME = "websocket";
+
     private final AuthorizeHandler authorizeHandler;
+
     private final CancelableScheduler scheduler;
+
     private final Configuration configuration;
+
     private final ClientsBox clientsBox;
 
     private final boolean isSsl;
